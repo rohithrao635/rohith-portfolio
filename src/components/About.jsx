@@ -98,7 +98,9 @@ function About() {
               Download Resume
             </a>
           </div>
-
+<a href="/resume.pdf" download className="btn btn-primary">
+  Download Resume
+</a>
           <div className="about-highlights">
             {highlights.map((item) => (
               <div key={item.title} className="highlight-card">
