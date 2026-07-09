@@ -1,0 +1,149 @@
+/* ===== INTERNSHIP SECTION ===== */
+.internship {
+  padding: 100px 24px;
+  background: #0d0d1f;
+}
+
+.internship-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== INTERNSHIP CARD ===== */
+.internship-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.internship-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 10px 40px rgba(108, 99, 255, 0.1);
+}
+
+/* ===== CARD HEADER ===== */
+.internship-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* ===== BRIEFCASE ICON BOX ===== */
+.internship-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(108, 99, 255, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+/* ===== TITLE BLOCK ===== */
+.internship-title-block {
+  flex: 1;
+}
+
+.internship-role {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+/* ===== META ROW ===== */
+.internship-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.internship-meta .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+}
+
+.internship-meta .meta-item svg {
+  color: var(--primary);
+}
+
+/* ===== BADGE ===== */
+.internship-badge {
+  background: rgba(108, 99, 255, 0.15);
+  color: var(--primary);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  white-space: nowrap;
+  height: fit-content;
+}
+
+/* ===== DESCRIPTION ===== */
+.internship-description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+/* ===== RESPONSIBILITIES ===== */
+.responsibilities-title {
+  font-size: 0.85rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.responsibilities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.responsibility-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #a0a0b8;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.check-icon {
+  color: var(--primary);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* ===== SKILLS TAGS ===== */
+.internship-skills {
+  margin-top: 8px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .internship-card-header {
+    flex-direction: column;
+  }
+
+  .internship-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

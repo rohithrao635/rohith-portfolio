@@ -1,0 +1,173 @@
+/* ===== PROJECTS SECTION ===== */
+.projects {
+  padding: 100px 24px;
+  background: var(--bg-main);
+}
+
+.projects-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== PROJECTS GRID ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+/* ===== PROJECT CARD ===== */
+.project-card {
+  background: var(--bg-card)a;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(108, 99, 255, 0.15);
+}
+
+/* ===== CARD HEADER ===== */
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== PROJECT ICON ===== */
+.project-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(108, 99, 255, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+/* ===== STATUS BADGES ===== */
+.project-status {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.status-completed {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.status-in-progress {
+  background: rgba(234, 179, 8, 0.15);
+  color: #eab308;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.status-upcoming {
+  background: rgba(108, 99, 255, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+}
+
+/* ===== PROJECT TITLE ===== */
+.project-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+/* ===== PROJECT DESCRIPTION ===== */
+.project-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ===== FEATURES ===== */
+.project-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a0a0b8;
+  font-size: 0.85rem;
+}
+
+.feature-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ===== TECH TAGS ===== */
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.tech-tag {
+  background: rgba(108, 99, 255, 0.1);
+  color: #a0a0c0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+}
+
+/* ===== PROJECT LINKS ===== */
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: #ffffff;
+}
+
+.project-link-disabled {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #444460;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

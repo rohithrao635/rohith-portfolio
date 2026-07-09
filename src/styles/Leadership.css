@@ -1,0 +1,115 @@
+.leadership {
+  padding: 100px 24px;
+  background: #0d0d1f;
+}
+
+.leadership-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+.leadership-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.leadership-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--primary),
+    var(--primary-dark)
+  );
+}
+
+.leadership-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px var(--primary-glow);
+}
+
+.leadership-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leadership-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--primary-glow);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.leadership-badge {
+  background: var(--primary-glow);
+  color: var(--primary);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--border-hover);
+}
+
+.leadership-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.leadership-org {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.leadership-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.leadership-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tag {
+  background: var(--primary-glow);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  border: 1px solid rgba(0, 212, 170, 0.2);
+}
+
+@media (max-width: 768px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+}
